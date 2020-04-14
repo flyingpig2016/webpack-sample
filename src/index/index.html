@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <script type="text/javascript">
+    <%= compilation.assets[htmlWebpackPlugin.files.js[0].substr(htmlWebpackPlugin.files.publicPath.length).split('?')[0]].source() %>
+    </script>
+</head>
+
+<body>
+    <div class="flex-div">flex-div</div>
+    <!-- 在body里面引用js -->
+    <% for (var k in htmlWebpackPlugin.files.js) {%>
+    <% if (k !== 'index') { %>
+    <!-- <script src="<%= htmlWebpackPlugin.files.js %>"></script> -->
+    <% } %>
+    <% } %>
+
+
+    我是compilation.assets===========================================================================
+    <% for(var key in compilation.assets)  { %>
+    <%= key %> : <%= JSON.stringify(compilation.assets[key])  %>
+    <% } %>
+
+    我是index.html==========
+    <%= htmlWebpackPlugin.options.date %>
+
+    我是htmlWebpackPlugin============================================================================
+    <% for(var key in htmlWebpackPlugin)  { %>
+    <%= key %> : <%= JSON.stringify(htmlWebpackPlugin[key])  %>
+    <% } %>
+    我是in htmlWebpackPlugin.tags====================================================================
+    <% for(var key in htmlWebpackPlugin.tags)  { %>
+    <%= key %> : <%= JSON.stringify(htmlWebpackPlugin.tags[key])  %>
+    <% } %>
+
+    我是in htmlWebpackPlugin.files===================================================================
+    <% for(var key in htmlWebpackPlugin.files)  { %>
+    <%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key])  %>
+    <% } %>
+
+    我是in htmlWebpackPlugin.options=================================================================
+    <% for(var key in htmlWebpackPlugin.options)  { %>
+    <%= key %> : <%= JSON.stringify(htmlWebpackPlugin.options[key])  %>
+    <% } %>
+</body>
+
+</html>
