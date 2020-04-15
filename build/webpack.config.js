@@ -139,6 +139,24 @@ module.exports = {
                         }
                     }, { loader: 'less-loader', options: { sourceMap: devMode } }
                 ]
+            }, {
+                test: /\.scss$/,
+                use: [
+                    "style-loader", // 将 JS 字符串生成为 style 节点
+                    "css-loader",  // 将 CSS 转化成 CommonJS 模块
+                    {
+                        loader: "postcss-loader",  // 加前缀
+                        options: {
+                            plugins: [
+                                require('autoprefixer')({
+                                    overrideBrowserslist: ['> 0.15% in CN']
+                                }),
+                            ],
+                            sourceMap: devMode
+                        }
+                    },
+                    "sass-loader" // 将 Sass 编译成 CSS
+                ]
             }
         ]
     },
