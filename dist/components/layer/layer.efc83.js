@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./assets/feifei.jpg":
+/*!***************************!*\
+  !*** ./assets/feifei.jpg ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"/dist/assets/feifei.jpg\");\n\n//# sourceURL=webpack:///./assets/feifei.jpg?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js!./src/components/layer/layer.scss":
 /*!******************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js!./src/components/layer/layer.scss ***!
@@ -93,7 +105,18 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".layer {\\n  width: 600px;\\n  height: 500px;\\n  background-color: green; }\\n  .layer div {\\n    width: 400px;\\n    height: 100px;\\n    background-color: red; }\\n  .layer .flex {\\n    display: -webkit-box;\\n    display: flex; }\\n\\n.layer .scs_style {\\n  background-color: #ccc;\\n  width: 100px;\\n  height: 100px; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/components/layer/layer.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../../assets/feifei.jpg */ \"./assets/feifei.jpg\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \".layer {\\n  width: 600px;\\n  height: 500px;\\n  background-color: green; }\\n  .layer div {\\n    width: 400px;\\n    height: 100px;\\n    background-color: red; }\\n  .layer .flex {\\n    display: -webkit-box;\\n    display: flex; }\\n\\n.layer .scs_style {\\n  background-color: #ccc;\\n  width: 100px;\\n  height: 100px; }\\n\\n.layer .loveImg {\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \"); }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/components/layer/layer.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/less-loader/dist/cjs.js?!./src/components/layer/layer.less":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/less-loader/dist/cjs.js??ref--6-3!./src/components/layer/layer.less ***!
+  \**************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".layer {\\n  width: 600px;\\n  height: 500px;\\n  background-color: green;\\n}\\n.layer div {\\n  width: 400px;\\n  height: 100px;\\n  background-color: red;\\n}\\n.layer .flex {\\n  display: -webkit-box;\\n  display: flex;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/components/layer/layer.less?./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/less-loader/dist/cjs.js??ref--6-3");
 
 /***/ }),
 
@@ -109,6 +132,30 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = url && url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n'), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
+/***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = url && url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  }\n\n  if (options.maybeNeedQuotes && /[\\t\\n\\f\\r \"'=<>`]/.test(url)) {\n    return \"\\\"\".concat(url, \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/html-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -121,6 +168,17 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/components/layer/layer.html":
+/*!*****************************************!*\
+  !*** ./src/components/layer/layer.html ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___ = __webpack_require__(/*! ../../../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\nvar ___HTML_LOADER_IMPORT_0___ = __webpack_require__(/*! ../../../assets/feifei.jpg */ \"./assets/feifei.jpg\");\n// Module\nvar ___HTML_LOADER_REPLACER_0___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_0___);\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n\\r\\n<head>\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <title>Document</title>\\r\\n    <!-- <script type=\\\"text/javascript\\\">\\r\\n        <%= compilation.assets[htmlWebpackPlugin.files.js[0].substr(htmlWebpackPlugin.files.publicPath.length).split('?')[0]].source() %>\\r\\n    </script> -->\\r\\n    <!-- <script src=\\\"<%= htmlWebpackPlugin.files.js %>\\\"></script> -->\\r\\n</head>\\r\\n\\r\\n<body>\\r\\n    <div class=\\\"layer\\\">\\r\\n        this is a layer\\r\\n        <div> this is a div</div>\\r\\n        <div class=\\\"scs_style\\\">\\r\\n            测试scss-loader\\r\\n        </div>\\r\\n        <div class=\\\"loveImg\\\"></div>\\r\\n        <img src=\\\"\" + ___HTML_LOADER_REPLACER_0___ + \"\\\" />\\r\\n    </div>\\r\\n</body>\\r\\n\\r\\n</html>\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./src/components/layer/layer.html?");
+
+/***/ }),
+
 /***/ "./src/components/layer/layer.js":
 /*!***************************************!*\
   !*** ./src/components/layer/layer.js ***!
@@ -129,7 +187,18 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _layer_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layer.scss */ \"./src/components/layer/layer.scss\");\n/* harmony import */ var _layer_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_layer_scss__WEBPACK_IMPORTED_MODULE_0__);\n// jshint esversion:6\n// import './layer.less';\n // import tpl from './layer.html';\n\nfunction layer() {\n  return {\n    name: 'layer',\n    tpl: tpl\n  };\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (layer);\n\n//# sourceURL=webpack:///./src/components/layer/layer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _layer_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layer.less */ \"./src/components/layer/layer.less\");\n/* harmony import */ var _layer_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_layer_less__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _layer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./layer.scss */ \"./src/components/layer/layer.scss\");\n/* harmony import */ var _layer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_layer_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _layer_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layer.html */ \"./src/components/layer/layer.html\");\n/* harmony import */ var _layer_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_layer_html__WEBPACK_IMPORTED_MODULE_2__);\n// jshint esversion:6\n\n\n\n\nfunction layer() {\n  return {\n    name: 'layer',\n    tpl: _layer_html__WEBPACK_IMPORTED_MODULE_2___default.a\n  };\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (layer);\n\n//# sourceURL=webpack:///./src/components/layer/layer.js?");
+
+/***/ }),
+
+/***/ "./src/components/layer/layer.less":
+/*!*****************************************!*\
+  !*** ./src/components/layer/layer.less ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/less-loader/dist/cjs.js??ref--6-3!./layer.less */ \"./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/less-loader/dist/cjs.js?!./src/components/layer/layer.less\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/components/layer/layer.less?");
 
 /***/ }),
 

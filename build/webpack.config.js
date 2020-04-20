@@ -36,7 +36,7 @@ htmlFiles.forEach((value) => {
         filename: path.join(DIST_PATH, name + '.html'),
         title: name,
         template: path.join(SRC_PATH, name + '.html'),
-        inject: false, // script放在html里面的位置 body head true(默认值) false
+        inject: true, // script放在html里面的位置 body head true(默认值) false
         hash: true,
         chunks: [name],
         excludeChunks: [], // 排除的js
@@ -157,7 +157,23 @@ module.exports = {
                     },
                     "sass-loader" // 将 Sass 编译成 CSS
                 ]
+            }, {
+                test: /\.html$/,
+                loader: 'html-loader'
+            }, { // 虽然html-webpack-plugin会默认解析ejs语法，但我测试的时候无法解析导入的侧栏、头部、底部的模板
+                test: /\.ejs$/,
+                loader: "ejs-loader?variable=data"
+            }, {
+                test: /\.(png|jpg|gif|svg)$/i,
+                loader: 'url-loader',
+                options: {
+                    name: '[path][name].[ext]', // 配置自定义文件名模板
+                    // outputPath: '/assets/', // 指定输出目录l,不建议使用这个目录
+                    publicPath: "/dist/", //建议使用该地址不是唯一的，根据你的代码实际路由地址进行修改
+                    limit: 8 * 1024, //图片大小小于8kb，就会被base64处理
+                }
             }
+
         ]
     },
     // 插件

@@ -1,9 +1,10 @@
 // jshint esversion:6
 import './css/main.css';
-import layer from './components/layer/layer.js';
+import Layer from './components/layer/layer.js';
 const App = function () {
-    const num = 1;
-    console.log(num);
-    console.log(layer);
+    console.log(Layer);
+    var dom = document.getElementById('app');
+    var layer = new Layer();
+    dom.innerHTML = layer.tpl;
 };
 new App();
